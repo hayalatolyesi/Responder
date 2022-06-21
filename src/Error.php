@@ -1,6 +1,6 @@
 <?php
 
-namespace Erdal\Library\Responder;
+namespace Erdal\Responder;
 
 use Exception;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Erdal\Library\Responder;
+namespace Erdal\Responder;
 
 /**
 *@Author-Name   : Erdal EROĞLU 
