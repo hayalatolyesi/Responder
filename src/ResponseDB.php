@@ -40,7 +40,7 @@ class ResponseDB {
     */
     public function setResponse(IResponder $response):ResponseDB{
         
-        $this->messageObject[$response::STATUS] = $response;
+        $this->messageObject[$response::STATUS] = $response->message;
         
         return $this;
         

@@ -16,7 +16,7 @@ class Data implements IResponder{
     * $message string
     * 
     */    
-    public $data;
+    public $message;
     
     /*
     * 
@@ -37,7 +37,7 @@ class Data implements IResponder{
 
     public function set(String $data):void{
         
-        $this->data  =$data;
+        $this->message  =$data;
         
     }
     
