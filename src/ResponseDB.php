@@ -30,7 +30,7 @@ class ResponseDB {
     */
     public function setResponse(IResponder $response):ResponseDB{
         
-        $this->messageObject =json_encode($response->get(),JSON_UNESCAPED_UNICODE);
+        $this->messageObject =$response->get();
         
         return $this;
         
