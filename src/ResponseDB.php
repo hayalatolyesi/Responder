@@ -13,11 +13,11 @@ class ResponseDB {
      * 
      * For Message Objects Storage
      *
-     * $messageObject array
+     * $messageObject arstring
      * 
      */
 
-    private array $messageObject = array();
+    private string $messageObject;
     
 
     /*
