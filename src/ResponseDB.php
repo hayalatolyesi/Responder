@@ -42,7 +42,7 @@ class ResponseDB {
     *  @return messageObject Array
     *
     */    
-    public function getAll():array{
+    public function getAll():string{
         
         return $this->messageObject;
         
