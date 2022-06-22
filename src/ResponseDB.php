@@ -21,16 +21,6 @@ class ResponseDB {
     
 
     /*
-     * 
-     * For Message Object Custom Index Number
-     *
-     * $i int
-     * 
-     */    
-    private int $i=0;
-    
-
-    /*
     *
     *  @param IResponder $response (Not null)
     *
@@ -40,7 +30,7 @@ class ResponseDB {
     */
     public function setResponse(IResponder $response):ResponseDB{
         
-        $this->messageObject[$response::STATUS] = $response->get();
+        $this->messageObject =json_encode($response->get(),JSON_UNESCAPED_UNICODE);
         
         return $this;
         

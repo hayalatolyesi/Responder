@@ -1,6 +1,6 @@
 <?php
 
-namespace Erdal\Responder;
+namespace Erdal\Library\Responder;
 
 /**
 *@Author-Name   : Erdal EROĞLU 
@@ -38,7 +38,6 @@ class Data implements IResponder{
     public function set(String $data):void{
         
         $this->data  =$data;
-        
     }
 
     /*
