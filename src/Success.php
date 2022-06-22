@@ -13,10 +13,10 @@ class Success implements IResponder{
     * 
     * For Response Messages
     *
-    * protected $data string
+    * $message string
     * 
     */    
-    protected  $data;
+    public $message;
     
     /*
     * 
@@ -37,21 +37,7 @@ class Success implements IResponder{
 
     public function set(String $message):void{
         
-        $this->data  = $message;
-        
-    }
-
-    /*
-    *
-    *  @param string $message 
-    *
-    *  @return String
-    *
-    */
-    public function get():String{
-        
-        return $this->data;
-
+        $this->message  =$message;
         
     }
     

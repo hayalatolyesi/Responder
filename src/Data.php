@@ -1,6 +1,6 @@
 <?php
 
-namespace Erdal\Responder;
+namespace Erdal\Library\Responder;
 
 /**
 *@Author-Name   : Erdal EROĞLU 
@@ -13,10 +13,10 @@ class Data implements IResponder{
     * 
     * For Response Messages
     *
-    * protected $data string
+    * $message string
     * 
     */    
-    protected $data;
+    public $data;
     
     /*
     * 
@@ -38,19 +38,6 @@ class Data implements IResponder{
     public function set(String $data):void{
         
         $this->data  =$data;
-    }
-
-    /*
-    *
-    *  @param string $message 
-    *
-    *  @return String
-    *
-    */
-    public function get():String{
-        
-        return $this->data;
-
         
     }
     

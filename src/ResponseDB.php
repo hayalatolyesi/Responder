@@ -13,11 +13,21 @@ class ResponseDB {
      * 
      * For Message Objects Storage
      *
-     * $messageObject arstring
+     * $messageObject array
      * 
      */
 
-    private string $messageObject;
+    private array $messageObject = array();
+    
+
+    /*
+     * 
+     * For Message Object Custom Index Number
+     *
+     * $i int
+     * 
+     */    
+    private int $i=0;
     
 
     /*
@@ -30,7 +40,7 @@ class ResponseDB {
     */
     public function setResponse(IResponder $response):ResponseDB{
         
-        $this->messageObject =$response->get();
+        $this->messageObject[$response::STATUS] = $response;
         
         return $this;
         
@@ -42,7 +52,7 @@ class ResponseDB {
     *  @return messageObject Array
     *
     */    
-    public function getAll():string{
+    public function getAll():array{
         
         return $this->messageObject;
         

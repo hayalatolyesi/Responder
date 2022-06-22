@@ -11,12 +11,12 @@ class Warning implements IResponder{
     
     /*
     * 
-    * For Response Message
+    * For Response Messages
     *
-    * protected $data string
+    * $message string
     * 
     */
-    protected string $data;
+    public string $message;
     
     /*
     * 
@@ -36,23 +36,9 @@ class Warning implements IResponder{
     */
     public function set(String $message):void{
         
-        $this->messadatage  = $message;
+        $this->message  =$message;
 
         
     }
-   
-    /*
-    *
-    *  @param string $message 
-    *
-    *  @return String
-    *
-    */
-    public function get():String{
-        
-        return $this->data;
-
-        
-    }
-
+    
 }

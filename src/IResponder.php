@@ -7,15 +7,5 @@ namespace Erdal\Responder;
 *@Create-Date   : dd-mm-YYYY
 **/
 interface IResponder{
-  
-    /*
-    *
-    *  @method get()
-    *
-    *  @return String
-    *
-    */
-
-    public function get():String;
-
+          
 }

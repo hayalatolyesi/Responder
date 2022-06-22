@@ -16,11 +16,11 @@ class Error implements IResponder{
      * 
      * For Response Messages
      *
-     * protected $data string
+     * $message string
      * 
      */
     
-    protected string $data;
+    public string $message;
     
 
     /*
@@ -68,26 +68,11 @@ class Error implements IResponder{
 
     public function set(string $message,int $customCode,\Exception $exception=null):void{
         
-        $this->data         = $message;
+        $this->message      = $message;
         
         $this->code         = $customCode;
         
-        $this->exception    = json_encode($exception,JSON_UNESCAPED_UNICODE) ?? new Exception();
-        
-    }
-
-
-    /*
-    *
-    *  @param string $data 
-    *
-    *  @return String
-    *
-    */
-    public function get():String{
-        
-        return $this->data;
-
+        $this->exception    = $exception ?? new Exception();
         
     }
     
