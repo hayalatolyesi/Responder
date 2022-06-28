@@ -7,7 +7,7 @@ namespace Erdal\Responder;
 *@Author-Mail   : erdal.eroglu@gmail.com
 *@Create-Date   : dd-mm-YYYY
 **/
-class Danger implements IResponder{
+class Alert implements IResponder{
     
     /*
     * 
