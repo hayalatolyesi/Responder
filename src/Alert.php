@@ -25,7 +25,7 @@ class Danger implements IResponder{
     * CONST STATUS string
     * 
     */    
-    CONST STATUS ="danger";
+    CONST STATUS ="alert";
     
     /*
     *
