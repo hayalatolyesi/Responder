@@ -54,7 +54,11 @@ class ResponseDB {
     */    
     public function getAll():array{
         
-        return $this->messageObject;
+        $response['message'] =  $this->messageObject;
+
+        $response['code']  =  $this->code??"";
+
+        return $response;
         
     }
 
