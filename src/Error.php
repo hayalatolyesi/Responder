@@ -12,7 +12,7 @@ use Exception;
 
 class Error implements IResponder{
     
-    /*
+    /** 
      * 
      * For Response Messages
      *
@@ -23,7 +23,7 @@ class Error implements IResponder{
     public string $message;
     
 
-    /*
+    /** 
      * 
      * For message code number
      *
@@ -33,7 +33,7 @@ class Error implements IResponder{
 
     public int $code;
     
-    /*
+    /** 
      * 
      * For PHP Exception Object
      *
@@ -44,7 +44,7 @@ class Error implements IResponder{
     public \Exception $exception;
     
 
-    /*
+    /** 
      * 
      * This Object, Identity Name
      *
@@ -54,7 +54,7 @@ class Error implements IResponder{
 
     CONST STATUS ="error";
     
-    /*
+    /** 
     *
     *  @param string $message (Not null)
     *

@@ -9,7 +9,7 @@ namespace Erdal\Responder;
 **/
 class Warning implements IResponder{
     
-    /*
+    /**
     * 
     * For Response Messages
     *
@@ -18,7 +18,7 @@ class Warning implements IResponder{
     */
     public string $message;
     
-    /*
+    /** 
     * 
     * This Object, Identity Name
     *
@@ -27,16 +27,20 @@ class Warning implements IResponder{
     */      
     CONST STATUS ="warning";
     
-    /*
+    /** 
     *
-    *  @param string $message 
+    *  @param string $message (Not null)
+    *
+    *  @param int $customCode (Not null)
     *
     *  @return void
     *
     */
-    public function set(String $message):void{
+    public function set(String $message, int $customCode):void{
         
         $this->message  =$message;
+
+        $this->code         = $customCode;
 
         
     }

@@ -9,7 +9,7 @@ namespace Erdal\Responder;
 **/
 class Alert implements IResponder{
     
-    /*
+    /** 
     * 
     * For Response Messages
     *
@@ -18,7 +18,7 @@ class Alert implements IResponder{
     */    
     public $message;
     
-    /*
+    /** 
     * 
     * This Object, Identity Name
     *
@@ -27,17 +27,21 @@ class Alert implements IResponder{
     */    
     CONST STATUS ="alert";
     
-    /*
+    /** 
     *
-    *  @param string $message 
+    *  @param string $message (Not Null)
+    *
+    *  @param int $customCode (Not Null)
     *
     *  @return void
     *
     */
 
-    public function set(String $message):void{
+    public function set(String $message,int $customCode):void{
         
-        $this->message  =$message;
+        $this->message  = $message;
+
+        $this->code     = $customCode;
         
     }
     

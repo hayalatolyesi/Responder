@@ -9,7 +9,7 @@ namespace Erdal\Responder;
 **/
 class Success implements IResponder{
     
-    /*
+    /** 
     * 
     * For Response Messages
     *
@@ -18,7 +18,7 @@ class Success implements IResponder{
     */    
     public $message;
     
-    /*
+    /** 
     * 
     * This Object, Identity Name
     *
@@ -27,17 +27,21 @@ class Success implements IResponder{
     */    
     CONST STATUS ="success";
     
-    /*
+    /** 
     *
-    *  @param string $message 
+    *  @param string $message (Not Null)
+    *
+    *  @param int $customCode
     *
     *  @return void
     *
     */
 
-    public function set(String $message):void{
+    public function set(String $message,int $customCode=200):void{
         
-        $this->message  =$message;
+        $this->message  = $message;
+
+        $this->code     = $customCode;
         
     }
     
