@@ -40,8 +40,8 @@ class ResponseDB {
     */
     public function setResponse(IResponder $response):ResponseDB{
         
-        $this->messageObject[$response::STATUS][] = $response->message;
-        
+        $this->messageObject[$response::STATUS][$response->code][] = $response->message;
+    
         return $this;
         
     }
@@ -54,11 +54,7 @@ class ResponseDB {
     */    
     public function getAll():array{
         
-        $response['message'] =  $this->messageObject;
-
-        $response['code']  =  $this->code??"";
-
-        return $response;
+        return $this->messageObject;
         
     }
 
