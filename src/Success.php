@@ -20,6 +20,15 @@ class Success implements IResponder{
     
     /** 
     * 
+    * For Response code
+    *
+    * $message int
+    * 
+    */    
+    public $code;
+
+    /** 
+    * 
     * This Object, Identity Name
     *
     * CONST STATUS string
