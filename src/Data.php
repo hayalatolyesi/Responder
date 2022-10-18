@@ -18,6 +18,15 @@ class Data implements IResponder{
     */    
     public $message;
     
+    /** 
+    * 
+    * For Response code
+    *
+    * $message int
+    * 
+    */    
+    public $code=0;
+    
     /*
     * 
     * This Object, Identity Name
