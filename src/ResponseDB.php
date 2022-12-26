@@ -45,6 +45,23 @@ class ResponseDB {
         return $this;
         
     }
+
+
+        /*
+    *
+    *  @param IResponder $response (Not null)
+    *
+    *
+    *  @return Responder\ResponseDB
+    *
+    */
+    public function setData(IResponder $response):ResponseDB{
+        
+        $this->messageObject[] = $response->message;
+    
+        return $this;
+        
+    }
     
 
     /*
