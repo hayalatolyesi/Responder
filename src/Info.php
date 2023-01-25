@@ -37,12 +37,10 @@ class Info implements IResponder{
     *
     */
 
-    public function set(String $message, int $customCode):void{
+    public function set(String | Array $message):void{
         
         $this->message  = $message;
 
-        $this->code     = $customCode;
-        
     }
     
 }

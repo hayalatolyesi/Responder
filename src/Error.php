@@ -22,17 +22,6 @@ class Error implements IResponder{
     
     public string $message;
     
-
-    /** 
-     * 
-     * For message code number
-     *
-     * $code int
-     * 
-     */
-
-    public int $code;
-    
     /** 
      * 
      * For PHP Exception Object
@@ -66,12 +55,10 @@ class Error implements IResponder{
     *
     */
 
-    public function set(string $message,int $customCode,\Exception $exception=null):void{
+    public function set(String | Array $message,\Exception $exception=null):void{
         
         $this->message      = $message;
-        
-        $this->code         = $customCode;
-        
+                
         $this->exception    = $exception ?? new Exception();
         
     }

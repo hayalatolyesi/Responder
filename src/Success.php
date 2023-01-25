@@ -17,15 +17,6 @@ class Success implements IResponder{
     * 
     */    
     public $message;
-    
-    /** 
-    * 
-    * For Response code
-    *
-    * $message int
-    * 
-    */    
-    public $code;
 
     /** 
     * 
@@ -46,11 +37,9 @@ class Success implements IResponder{
     *
     */
 
-    public function set(String $message,int $customCode=200):void{
+    public function set(String | Array $message):void{
         
         $this->message  = $message;
-
-        $this->code     = $customCode;
         
     }
     
