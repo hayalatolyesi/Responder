@@ -20,7 +20,7 @@ class Error implements IResponder{
      * 
      */
     
-    public string $message;
+    public string | Array $message;
     
     /** 
      * 

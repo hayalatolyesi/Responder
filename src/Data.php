@@ -16,7 +16,7 @@ class Data implements IResponder{
     * $message string
     * 
     */    
-    public $message;
+    public Array $message;
     
     /** 
     * 

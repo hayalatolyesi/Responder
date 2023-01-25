@@ -16,7 +16,7 @@ class Alert implements IResponder{
     * $message string
     * 
     */    
-    public $message;
+    public String | Array $message;
     
     /** 
     * 

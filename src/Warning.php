@@ -16,7 +16,7 @@ class Warning implements IResponder{
     * $message string
     * 
     */
-    public string $message;
+    public string | Array $message;
     
     /** 
     * 
@@ -36,7 +36,7 @@ class Warning implements IResponder{
     *  @return void
     *
     */
-    public function set(String|Array $message):void{
+    public function set(string | Array $message):void{
         
         $this->message      = $message;
 
