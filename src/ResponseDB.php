@@ -75,6 +75,18 @@ class ResponseDB {
         
     }
 
+
+        /*
+    *
+    *  @return JsonData String
+    *
+    */    
+    public function toJson():String{
+        
+        return json_encode($this->messageObject,JSON_UNESCAPED_UNICODE);
+        
+    }
+
     /*
     *
     *  @return void
