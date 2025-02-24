@@ -35,7 +35,7 @@ class Result implements IResponder{
     *
     */
 
-    public function set(boolean $message):void{
+    public function set(bool $message):void{
         
         $this->message  = $message;
 
