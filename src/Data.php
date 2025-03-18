@@ -44,7 +44,7 @@ class Data implements IResponder{
     *
     */
 
-    public function set(array $data,int | null $count):void{
+    public function set(array $data,int | null $count=null):void{
         
         $this->message  =$data;
 
