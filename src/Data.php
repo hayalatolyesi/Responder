@@ -35,6 +35,14 @@ class Data implements IResponder{
     * 
     */    
     CONST STATUS ="data";
+
+    /*
+     *
+     *@param protected int | null $count 
+     * 
+     */
+
+    protected int | null $count=null;
     
     /*
     *
@@ -46,9 +54,9 @@ class Data implements IResponder{
 
     public function set(array $data,int | null $count=null):void{
         
-        $this->message  =$data;
+        $this->message  = $data;
 
-        $this->message['count'] = $count;
+        $this->count    = $count;
         
     }
     

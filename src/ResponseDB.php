@@ -58,6 +58,11 @@ class ResponseDB {
     public function setData(IResponder $response):ResponseDB{
         
         $this->messageObject[$response::STATUS] = $response->message;
+
+        if(isset($response->count)){
+
+            $this->messageObject['count'] = $response->count;
+        }
     
         return $this;
         
