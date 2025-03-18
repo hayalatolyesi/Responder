@@ -44,9 +44,11 @@ class Data implements IResponder{
     *
     */
 
-    public function set(array $data):void{
+    public function set(array $data,int | null $count):void{
         
         $this->message  =$data;
+
+        $this->message['count'] = $count;
         
     }
     
