@@ -38,11 +38,11 @@ class Data implements IResponder{
 
     /*
      *
-     *@param protected int | null $count 
+     *@param public int | null $count 
      * 
      */
 
-    protected int | null $count=null;
+    public int | null $count=null;
     
     /*
     *
